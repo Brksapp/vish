@@ -1,0 +1,82 @@
+<!DOCTYPE html><html>
+<head>
+    <title>BRKS App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between">
+            <h1 class="text-xl font-bold">BRKS</h1>
+            <div>
+                <a href="#login" class="px-4">Login</a>
+                <a href="#signup" class="px-4">Signup</a>
+            </div>
+        </div>
+    </nav><!-- User Login / Signup -->
+<section id="login" class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4">Login</h2>
+    <input type="text" class="w-full p-2 mb-2 border rounded" placeholder="Username">
+    <input type="password" class="w-full p-2 mb-2 border rounded" placeholder="Password">
+    <button onclick="showAlert('Logged In Successfully!')" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded">Login</button>
+</section>
+
+<section id="signup" class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4">Signup</h2>
+    <input type="text" class="w-full p-2 mb-2 border rounded" placeholder="Username">
+    <input type="email" class="w-full p-2 mb-2 border rounded" placeholder="Email">
+    <input type="password" class="w-full p-2 mb-2 border rounded" placeholder="Password">
+    <button onclick="showAlert('Signed Up Successfully!')" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded">Signup</button>
+</section>
+
+<!-- Product List -->
+<section class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4">Products</h2>
+    <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="text-lg font-bold">Groceries</h3>
+            <p>Fresh Vegetables, Fruits, Rice, etc.</p>
+            <button onclick="showAlert('Groceries Ordered Successfully!')" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded">Order Now</button>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="text-lg font-bold">Food Delivery</h3>
+            <p>Pizza, Burger, Meals, etc.</p>
+            <button onclick="showAlert('Food Ordered Successfully!')" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded">Order Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- Order Tracking -->
+<section class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4">Order Tracking</h2>
+    <div class="bg-white p-4 rounded-lg shadow">
+        <p>Your Order is on the way!</p>
+    </div>
+</section>
+
+<!-- Payment Integration (Placeholder) -->
+<section class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4">Payment</h2>
+    <button onclick="showAlert('Payment Successful!')" class="bg-green-600 text-white px-4 py-2 rounded">Pay Now</button>
+</section>
+
+<!-- Notifications -->
+<section class="container mx-auto mt-8">
+    <h2 class="text-2xl font-bold mb-4">Notifications</h2>
+    <button onclick="showAlert('You have a new notification!')" class="bg-yellow-600 text-white px-4 py-2 rounded">Check Notification</button>
+</section>
+
+<!-- Feedback / Ratings -->
+<section class="container mx-auto mt-8 mb-8">
+    <h2 class="text-2xl font-bold mb-4">Feedback / Ratings</h2>
+    <textarea class="w-full p-2 border rounded" rows="4" placeholder="Write your feedback here..."></textarea>
+    <button onclick="showAlert('Feedback Submitted!')" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+</section>
+
+</body>
+</html>
